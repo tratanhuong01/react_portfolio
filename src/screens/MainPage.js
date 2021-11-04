@@ -37,7 +37,7 @@ function MainPage(props) {
     return () => {
       clearTimeout(timeOut);
     };
-    //
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
   //
   return (
@@ -50,7 +50,7 @@ function MainPage(props) {
               className="w-full items-center justify-center flex fixed "
               style={{ height: "calc(100vh)", top: 88 }}
             >
-              <i class="bx bx-loader-alt text-7xl circle__loading text-blue-600"></i>
+              <i className="bx bx-loader-alt text-7xl circle__loading text-blue-600"></i>
             </div>
           )}
           <div
