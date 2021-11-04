@@ -1,13 +1,14 @@
 import React from "react";
+import Title from "../components/Title/Title";
 
 function Contact(props) {
   return (
-    <div className="w-full bg-gray-100 pb-16">
-      <div className="flex items-center py-16 justify-center">
-        <div className="bg-blue-600 w-4 h-4 mr-3"></div>
-        <span className="text-4xl font-bold">Contact me</span>
+    <div id="contact" className="w-full bg-gray-100">
+      <div className="w-full box-content px-2 lg:w-2/3 mx-auto pt-16">
+        <Title title="Contact me" />
       </div>
-      <div className="w-5/12 p-10 bg-white mx-auto">
+
+      <div className="w-full px-3 ml-1.5 mt-16 md:mx-auto lg:w-2/3 xl:w-5/12 py-10 lg:p-10 bg-white box-border">
         <div className="w-full flex">
           <div className="w-1/2 mr-10">
             <label className="font-semibold">

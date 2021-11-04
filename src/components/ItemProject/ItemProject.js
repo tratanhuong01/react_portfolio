@@ -21,8 +21,8 @@ function ItemProject(props) {
   const [type, setType] = useState(0);
   //
   return (
-    <div className="w-full box-border py-6 bg-white flex my-12">
-      <div className="w-1/2">
+    <div className="w-full box-border py-6 bg-white flex my-6 md:my-12 flex-col md:flex-row">
+      <div className="w-full md:w-1/2">
         <div className="border-l-8 border-solid border-blue-600 pl-4 font-bold mb-2 text-2xl text-blue-600">
           Clone facebook
         </div>
@@ -35,13 +35,13 @@ function ItemProject(props) {
           <div></div>
         </div>
       </div>
-      <div className="w-1/2 px-3 box-border">
+      <div className="w-full md:w-1/2 px-3 box-border">
         <div className="flex my-2">
           <Button name="Video" button={0} type={type} setType={setType} />
           <Button name="Pictures" button={1} type={type} setType={setType} />
         </div>
         {type === 0 ? (
-          <div className="w-full h-64 bg-gray-200">
+          <div className="w-full h-72 md:h-64 bg-gray-200">
             <video
               src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
               className="w-full h-full object-cover"

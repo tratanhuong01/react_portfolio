@@ -2,7 +2,6 @@ import { NotFound } from "http-errors";
 import {
   PAGE_ABOUT_ME,
   PAGE_CONTACT,
-  PAGE_INDEX,
   PAGE_PROJECT,
   PAGE_RESUME,
 } from "../constants/Config";

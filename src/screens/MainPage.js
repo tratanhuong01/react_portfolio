@@ -28,7 +28,7 @@ function MainPage(props) {
             0,
             document.getElementById(pathname).getBoundingClientRect().top +
               window.scrollY -
-              100
+              40
           );
         }
         setLoading(false);

@@ -20,7 +20,7 @@ function Header(props) {
             alt=""
             className="w-14 h-14 rounded-full mr-4"
           />
-          <div className="flex items-center">
+          <div className=" items-center hidden lg:flex">
             <span className="font-bold text-2xl">Trà Tấn Hưởng</span>
             <span className="mx-2">/</span>
             <span className="text-gray-600">FRONT-END DEVELOPER</span>
@@ -28,18 +28,21 @@ function Header(props) {
         </div>
         <ul className="flex items-center">
           {routes.length &&
-            routes.map((route, index) => (
-              <li
-                key={index}
-                className={`px-4 py-1.5 rounded-full mx-1 font-semibold ${
-                  route.to !== location.pathname
-                    ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
-                    : "border-2 border-solid border-blue-600 text-blue-600"
-                }`}
-              >
-                <Link to={route.to}>{route.name}</Link>
-              </li>
-            ))}
+            routes.map(
+              (route, index) =>
+                route.to && (
+                  <li
+                    key={index}
+                    className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${
+                      route.to !== location.pathname
+                        ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
+                        : "border-2 border-solid border-blue-600 text-blue-600"
+                    }`}
+                  >
+                    <Link to={route.to}>{route.name}</Link>
+                  </li>
+                )
+            )}
         </ul>
       </div>
     </div>
