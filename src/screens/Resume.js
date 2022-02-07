@@ -1,4 +1,5 @@
 import React from "react";
+import ItemResume from "../components/ItemResume/ItemResume";
 import Title from "../components/Title/Title";
 
 function Resume(props) {
@@ -11,18 +12,24 @@ function Resume(props) {
           projects I made at home to improve my skills."
         />
         <p className="text-gray-600 w-1/2 mx-auto text-center"></p>
-        <div className="border-l-8 mt-10 border-solid border-blue-600 pl-4 font-bold pb-2 text-2xl text-blue-600">
-          SKILLS
-        </div>
-        <div className="text-center text-gray-600 my-8">Loading....</div>
-        <div className="border-l-8 mt-10 border-solid border-blue-600 pl-4 font-bold pb-2 text-2xl text-blue-600">
-          EDUCATIONS
-        </div>
-        <div className="text-center text-gray-600 my-8">Loading....</div>
-        <div className="border-l-8 mt-10 border-solid border-blue-600 pl-4 font-bold pb-2 text-2xl text-blue-600">
-          WORK EXPERIENCE
-        </div>
-        <div className="text-center text-gray-600 my-8">Loading....</div>
+        <ItemResume title={"SKILLS"}>
+          <p className="my-2 font-bold text-xl">English</p>
+          <p> - Read and understand documents</p>
+          <p> - Basic English communication skills</p>
+          <p className="my-2 font-bold text-xl">Front - End</p>
+          <p>HTML , CSS , Javascript , JQuery , TailwindCSS</p>
+          <p className="my-2 font-bold text-xl">Back - End</p>
+          <p>PHP , Java , Spring Boot , Laravel</p>
+          <p className="my-2 font-bold text-xl">SQL</p>
+          <p>SQL Server , MySQL , PostgreSQL</p>
+          <p className="my-2 font-bold text-xl">Library Javascript</p>
+          <p>SocketIO , ReactJS</p>
+          <p className="my-2 font-bold text-xl">Basic NodeJS</p>
+        </ItemResume>
+        <ItemResume title={"EDUCATIONS"}>
+          <p className="my-2 font-bold text-xl">Viet - Han University</p>
+          <p>2019 - Present</p>
+        </ItemResume>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
-import { PAGE_ABOUT_ME } from "../../constants/Config";
+import { AVATAR, PAGE_ABOUT_ME } from "../../constants/Config";
 import routes from "../../routes/routes";
 
 function Header(props) {
@@ -16,9 +16,9 @@ function Header(props) {
           className="flex cursor-pointer"
         >
           <img
-            src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/p600x600/246993649_3028148294135017_5945473786169052701_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zOc7kYpOVp8AX-FmHCo&tn=t2Dc8eqxNna7vY47&_nc_ht=scontent.fdad3-4.fna&oh=1510dfd09fbd36bc3db649aa46de7d82&oe=61A94BC9"
+            src={AVATAR}
             alt=""
-            className="w-14 h-14 rounded-full mr-4"
+            className="w-14 h-14 rounded-full mr-4 object-cover"
           />
           <div className=" items-center hidden lg:flex">
             <span className="font-bold text-2xl">Trà Tấn Hưởng</span>
@@ -33,11 +33,10 @@ function Header(props) {
                 route.to && (
                   <li
                     key={index}
-                    className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${
-                      route.to !== location.pathname
-                        ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
-                        : "border-2 border-solid border-blue-600 text-blue-600"
-                    }`}
+                    className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${route.to !== location.pathname
+                      ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
+                      : "border-2 border-solid border-blue-600 text-blue-600"
+                      }`}
                   >
                     <Link to={route.to}>{route.name}</Link>
                   </li>

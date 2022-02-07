@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import MainPage from "./screens/MainPage";
+import { AppProvider } from "./contexts/AppContext";
 
 function App(props) {
   //
@@ -9,7 +10,9 @@ function App(props) {
   return (
     <Router>
       <Switch>
-        <MainPage />
+        <AppProvider>
+          <MainPage />
+        </AppProvider>
       </Switch>
     </Router>
   );

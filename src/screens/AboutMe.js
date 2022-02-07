@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 import FollowMe from "../components/FollowMe/FollowMe";
-import { PAGE_PROJECT, PAGE_RESUME } from "../constants/Config";
+import { AVATAR, CV_LINK, PAGE_PROJECT, PAGE_RESUME } from "../constants/Config";
 
 function AboutMe(props) {
   //
@@ -16,7 +16,7 @@ function AboutMe(props) {
       >
         <div className="w-5/12 bg-gray-100 h-full">
           <img
-            src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/p600x600/246993649_3028148294135017_5945473786169052701_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zOc7kYpOVp8AX-FmHCo&tn=t2Dc8eqxNna7vY47&_nc_ht=scontent.fdad3-4.fna&oh=1510dfd09fbd36bc3db649aa46de7d82&oe=61A94BC9"
+            src={AVATAR}
             alt=""
             className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full object-cover mx-auto"
           />
@@ -54,16 +54,13 @@ function AboutMe(props) {
           </div>
           <hr />
           <p className="my-3 text-gray-600 text-justify">
-            I am Huong. I am a student at Vietnam - Korea University of
-            Information and Communication Technology. I have been exposed to
-            electronic devices since childhood, so I have a passion for
-            technology. I had an orientation when I graduated from high school
-            as to what I would study before I finished high school. And when I
-            finished high school, I chose information technology. I choosed to
-            the web, so I fell in love with it. I love perfection so every
-            product...
-            <span className="ml-4 text-blue-500 font-semibold cursor-pointer hover:text-blue-600">
-              Read More
+            As a student about to graduate with my own knowledge and experience,
+            I hope to contribute a small part to the development of the company.
+            <br />
+            <br />
+            <span onClick={() => window.open(CV_LINK)}
+              className="mt-2 cursor-pointer text-blue-500 font-semibold cursor-pointer hover:text-blue-600">
+              Go to cv
             </span>
           </p>
         </div>

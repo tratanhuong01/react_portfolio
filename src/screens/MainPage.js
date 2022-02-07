@@ -1,37 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { useLocation } from "react-router";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import routes from "../routes/routes";
 import AboutMe from "./AboutMe";
-import Contact from "./Contact";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import NotFound from "./NotFound";
+import PreviewImageVideo from "./PreviewImageVideo";
+import { AppContext } from "../contexts/AppContext";
+
 function MainPage(props) {
   //
-  const [loading, setLoading] = useState(false);
+  const { state: { loading, preview }, dispatch, actions } = useContext(AppContext);
   const location = useLocation();
   const index = routes.findIndex((route) => route.to === location.pathname);
   useEffect(() => {
     //
     let timeOut;
     if (index !== -1) {
-      setLoading(true);
+      dispatch(actions.updateData('loading', true));
       timeOut = setTimeout(() => {
         const pathname =
           location.pathname.replace("/", "") === ""
-            ? "index"
+            ? "about-me"
             : location.pathname.replace("/", "");
         if (document.getElementById(pathname)) {
           window.scrollTo(
             0,
             document.getElementById(pathname).getBoundingClientRect().top +
-              window.scrollY -
-              40
+            window.scrollY -
+            40
           );
         }
-        setLoading(false);
+        dispatch(actions.updateData('loading', false));
       }, 500);
     }
     return () => {
@@ -60,13 +62,13 @@ function MainPage(props) {
             <AboutMe />
             <Resume />
             <Projects />
-            <Contact />
           </div>
         </>
       ) : (
         <NotFound />
       )}
       <Footer />
+      {preview && <PreviewImageVideo />}
     </div>
   );
 }

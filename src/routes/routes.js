@@ -1,12 +1,10 @@
 import { NotFound } from "http-errors";
 import {
   PAGE_ABOUT_ME,
-  PAGE_CONTACT,
   PAGE_PROJECT,
   PAGE_RESUME,
 } from "../constants/Config";
 import AboutMe from "../screens/AboutMe";
-import Contact from "../screens/Contact";
 import Projects from "../screens/Projects";
 import Resume from "../screens/Resume";
 
@@ -29,12 +27,12 @@ const routes = [
     exact: true,
     name: "PROJECTS",
   },
-  {
-    to: PAGE_CONTACT,
-    main: () => <Contact />,
-    exact: true,
-    name: "CONTACT",
-  },
+  // {
+  //   to: PAGE_CONTACT,
+  //   main: () => <Contact />,
+  //   exact: true,
+  //   name: "CONTACT",
+  // },
   {
     to: "",
     main: () => <NotFound />,

@@ -1,6 +1,7 @@
 import React from "react";
 import ItemProject from "../components/ItemProject/ItemProject";
 import Title from "../components/Title/Title";
+import projects from "../data/projects";
 
 function Projects(props) {
   return (
@@ -13,10 +14,7 @@ function Projects(props) {
         />
       </div>
       <div className="w-full box-content px-2 lg:w-2/3 mx-auto">
-        <ItemProject />
-        <ItemProject />
-        <ItemProject />
-        <ItemProject />
+        {projects.map(item => <ItemProject item={item} key={item.id} />)}
       </div>
     </div>
   );
