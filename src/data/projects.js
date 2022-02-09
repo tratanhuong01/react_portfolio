@@ -18,7 +18,7 @@ const projects = [
                 account: null
             }
         ],
-        use: "HTML,CSS,Javascript ,ReactJS,TailwindCSS",
+        use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
         time: "09/2021 - 10/2021",
         images: [
             {
@@ -44,29 +44,29 @@ const projects = [
         github: [
             {
                 id: 0,
-                name: "Link github (user) : ",
+                name: "Link github (user): ",
                 link: "https://github.com/tratanhuong01/project_graduate_e_commerce"
             },
             {
                 id: 0,
-                name: "Link github (admin) : ",
+                name: "Link github (admin): ",
                 link: "https://github.com/tratanhuong01/admin_project_graduate_e_commerce"
             },
             {
                 id: 0,
-                name: "Link github (api) : ",
+                name: "Link github (api): ",
                 link: "https://github.com/tratanhuong01/api_e_commerce_project_gradute"
             },
             {
                 id: 0,
-                name: "Link github (server) : ",
+                name: "Link github (server): ",
                 link: "https://github.com/tratanhuong01/server_e_commerce_project_gradute"
             }
         ],
         demo: [
             {
                 id: 0,
-                name: "Link demo (user) : ",
+                name: "Link demo (user): ",
                 link: "https://hsmart.vercel.app/",
                 account: {
                     username: "tratanhuong01@gmail.com",
@@ -75,7 +75,7 @@ const projects = [
             },
             {
                 id: 1,
-                name: "Link demo (admin) : ",
+                name: "Link demo (admin): ",
                 link: "https://admin-hsmart.vercel.app/admin/login",
                 account: {
                     username: "admin123456789@gmail.com",
@@ -83,7 +83,7 @@ const projects = [
                 }
             }
         ],
-        use: " HTML , CSS , Javascript  , TailwindCSS, ReactJS ,NodeJS , MySQL , Spring Boot , SocketIO",
+        use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
         time: "07/2021 - 12/2021",
         images: [
             {
@@ -201,7 +201,7 @@ const projects = [
     {
         id: 2,
         name: "Facebook Clone (Use ReactJS)",
-        description: "Register , login , restore account , edit and delete posts , stories , update personal information , send messages , express feelings",
+        description: "Register, login, restore account, edit and delete posts, stories, update personal information, send messages, express feelings",
         github: [
             {
                 id: 0,
@@ -230,7 +230,7 @@ const projects = [
                 }
             }
         ],
-        use: "HTML , CSS , Javascript , ReactJS ,TailwindCSS , SocketIO , NodeJS , PostgreSQL , Spring Boot",
+        use: "HTML, CSS, Javascript, ReactJS, TailwindCSS, SocketIO, NodeJS, PostgreSQL, Spring Boot",
         time: "12/2021 - Present",
         images: [
             {
@@ -298,7 +298,7 @@ const projects = [
                 account: null
             }
         ],
-        use: "HTML,CSS,Javascript ,ReactJS,TailwindCSS",
+        use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
         time: "19/01/2021 - 20/01/2021",
         images: [
             {

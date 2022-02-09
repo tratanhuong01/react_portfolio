@@ -17,17 +17,18 @@ function Resume(props) {
           <p> - Read and understand documents</p>
           <p> - Basic English communication skills</p>
           <p className="my-2 font-bold text-xl">Front - End</p>
-          <p>HTML , CSS , Javascript , JQuery , TailwindCSS</p>
+          <p>HTML, CSS, Javascript, TailwindCSS</p>
           <p className="my-2 font-bold text-xl">Back - End</p>
-          <p>PHP , Java , Spring Boot , Laravel</p>
+          <p>PHP, Java, Spring Boot, Laravel</p>
           <p className="my-2 font-bold text-xl">SQL</p>
-          <p>SQL Server , MySQL , PostgreSQL</p>
+          <p>SQL Server, MySQL, PostgreSQL</p>
           <p className="my-2 font-bold text-xl">Library Javascript</p>
-          <p>SocketIO , ReactJS</p>
+          <p>SocketIO, ReactJS, Moment.js, HTML2Canvas, JQuery</p>
           <p className="my-2 font-bold text-xl">Basic NodeJS</p>
         </ItemResume>
         <ItemResume title={"EDUCATIONS"}>
-          <p className="my-2 font-bold text-xl">Viet - Han University</p>
+          <p className="my-2 font-bold text-xl">
+            Vietnam - Korea University of Information and Communication Technology</p>
           <p>2019 - Present</p>
         </ItemResume>
       </div>
