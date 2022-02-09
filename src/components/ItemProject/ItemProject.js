@@ -31,23 +31,23 @@ function ItemProject(props) {
           {item.name}
         </div>
         <div className="p-3">
-          <p className="text-gray-600 mb-3 font-semibold">Description : <span className="font-thin">
+          <p className="text-gray-600 mb-3 font-semibold">Description: <span className="font-thin">
             {item.description}</span></p>
-          {item.demo.length === 1 ? <><p className="text-gray-600 font-semibold mb-3">Link demo :
+          {item.demo.length === 1 ? <><p className="text-gray-600 font-semibold mb-3">Link demo:
             <span onClick={() => window.open(item.demo[0].link)}
               className="font-thin hover:underline text-blue-500 cursor-pointer ml-1">
               {item.demo[0].link}</span></p>
             {item.demo[0].account && <p className="mb-3"><span className="font-semibold text-gray-600">
-              Account Demo</span> : (username : {item.demo[0].account.username} , password : {item.demo[0].account.password})</p>}
+              Account Demo</span>: (username: {item.demo[0].account.username} , password: {item.demo[0].account.password})</p>}
           </> :
             item.demo.map((dt, index) => <div key={index}>
               <p className="text-gray-600 font-semibold mb-3">{dt.name}
                 <span onClick={() => window.open(dt.link)}
                   className="font-thin hover:underline text-blue-500 cursor-pointer">{dt.link}</span></p>
               {dt.account && <p className="mb-3"><span className="font-semibold text-gray-600">
-                Account Demo</span> : (username : {dt.account.username} , password : {dt.account.password})</p>}
+                Account Demo</span>: (username: {dt.account.username} , password: {dt.account.password})</p>}
             </div>)}
-          {item.github.length === 1 ? <p className="text-gray-600 font-semibold mb-3">Link github :
+          {item.github.length === 1 ? <p className="text-gray-600 font-semibold mb-3">Github:
             <span onClick={() => window.open(item.github[0].link)}
               className="font-thin hover:underline text-blue-500 cursor-pointer ml-1">
               {item.github[0].link}</span></p> :
@@ -57,12 +57,12 @@ function ItemProject(props) {
                   className="font-thin hover:underline text-blue-500 cursor-pointer ml-1">{dt.link}</span></p>
             </div>)}
           <p className="text-gray-600 font-semibold mb-3">
-            Language, libraries, technology used : <span className="font-thin">
+            Language, libraries, technology used: <span className="font-thin">
               {item.use}
             </span>
           </p>
           <p className="text-gray-600 font-semibold mb-3">
-            Completion time : <span className="font-thin">
+            Completion time: <span className="font-thin">
               {item.time}
             </span>
           </p>
