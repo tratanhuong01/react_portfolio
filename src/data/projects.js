@@ -231,7 +231,7 @@ const projects = [
             }
         ],
         use: "HTML, CSS, Javascript, ReactJS, TailwindCSS, SocketIO, NodeJS, PostgreSQL, Spring Boot",
-        time: "12/2021 - Present",
+        time: "12/2021 - 2/2022",
         images: [
             {
                 id: 0,
