@@ -16,14 +16,14 @@ function Resume(props) {
           <p className="my-2 font-bold text-xl">English</p>
           <p> - Read and understand documents</p>
           <p> - Basic English communication skills</p>
-          <p className="my-2 font-bold text-xl">Front - End</p>
-          <p>HTML, CSS, Javascript, TailwindCSS</p>
-          <p className="my-2 font-bold text-xl">Back - End</p>
-          <p>PHP, Java, Spring Boot, Laravel</p>
-          <p className="my-2 font-bold text-xl">SQL</p>
+          <p className="my-2 font-bold text-xl">Programming Language</p>
+          <p>HTML, CSS, Javascript, PHP, Java</p>
+          <p className="my-2 font-bold text-xl">Server Side Framework</p>
+          <p>Spring boot, Laravel</p>
+          <p className="my-2 font-bold text-xl">Database</p>
           <p>SQL Server, MySQL, PostgreSQL</p>
-          <p className="my-2 font-bold text-xl">Library Javascript</p>
-          <p>SocketIO, ReactJS, Moment.js, HTML2Canvas, JQuery</p>
+          <p className="my-2 font-bold text-xl">Web Framework</p>
+          <p>ReactJS</p>
           <p className="my-2 font-bold text-xl">Basic NodeJS</p>
         </ItemResume>
         <ItemResume title={"EDUCATIONS"}>

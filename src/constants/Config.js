@@ -15,4 +15,4 @@ export const LINK_INSTAGRAM = "https://www.instagram.com/tratanhuong2001/";
 //
 export const AVATAR = "https://res.cloudinary.com/ensonet-dev/image/upload/v1644224603/Avatars/260347987_860340711422545_5819341585161953123_n_iagczo.jpg"
 //
-export const CV_LINK = "https://www.topcv.vn/xem-cv/XgEPA1dXVVcGUgQGBQUGB1FTCwIIUwRUDgIAUw3ef5";
+export const CV_LINK = "https://www.topcv.vn/xem-cv/VFpUXlZTVwdUC1MCDFdQAl0CVAEGAlEHB1NcXg0d95";
