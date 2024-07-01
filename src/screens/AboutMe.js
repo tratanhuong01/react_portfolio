@@ -1,7 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router";
 import FollowMe from "../components/FollowMe/FollowMe";
-import { AVATAR, CV_LINK, PAGE_PROJECT, PAGE_RESUME } from "../constants/Config";
+import {
+  AVATAR,
+  CV_LINK,
+  PAGE_PROJECT,
+  PAGE_RESUME,
+} from "../constants/Config";
 
 function AboutMe(props) {
   //
@@ -22,7 +27,7 @@ function AboutMe(props) {
           />
           <p className="text-center font-bold text-2xl my-4">Trà Tấn Hưởng</p>
           <div className="w-16 py-0.5 bg-gray-600 mx-auto"></div>
-          <p className="text-center text-gray-600 my-5">FRONT-END DEVELOPER</p>
+          <p className="text-center text-gray-600 my-5">FULLSTACK DEVELOPER</p>
           <div className="w-full bg-white py-4 flex justify-center items-end">
             <FollowMe />
           </div>
@@ -58,8 +63,10 @@ function AboutMe(props) {
             I hope to contribute a small part to the development of the company.
             <br />
             <br />
-            <span onClick={() => window.open(CV_LINK)}
-              className="mt-2 cursor-pointer text-blue-500 font-semibold cursor-pointer hover:text-blue-600">
+            <span
+              onClick={() => window.open(CV_LINK)}
+              className="mt-2 cursor-pointer text-blue-500 font-semibold cursor-pointer hover:text-blue-600"
+            >
               Go to cv
             </span>
           </p>

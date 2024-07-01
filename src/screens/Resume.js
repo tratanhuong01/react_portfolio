@@ -17,19 +17,21 @@ function Resume(props) {
           <p> - Read and understand documents</p>
           <p> - Basic English communication skills</p>
           <p className="my-2 font-bold text-xl">Programming Language</p>
-          <p>HTML, CSS, Javascript, PHP, Java</p>
+          <p>HTML, CSS, Javascript, PHP, Java, Python, Typescript</p>
           <p className="my-2 font-bold text-xl">Server Side Framework</p>
           <p>Spring boot, Laravel</p>
           <p className="my-2 font-bold text-xl">Database</p>
-          <p>SQL Server, MySQL, PostgreSQL</p>
+          <p>SQL Server, MySQL, PostgreSQL, Firebase</p>
           <p className="my-2 font-bold text-xl">Web Framework</p>
-          <p>ReactJS</p>
+          <p>ReactJS, VueJS</p>
           <p className="my-2 font-bold text-xl">Basic NodeJS</p>
         </ItemResume>
         <ItemResume title={"EDUCATIONS"}>
           <p className="my-2 font-bold text-xl">
-            Vietnam - Korea University of Information and Communication Technology</p>
-          <p>2019 - Present</p>
+            Vietnam - Korea University of Information and Communication
+            Technology
+          </p>
+          <p>8-2019 - 6-2022</p>
         </ItemResume>
       </div>
     </div>
