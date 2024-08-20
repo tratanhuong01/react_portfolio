@@ -1,12 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router";
 import FollowMe from "../components/FollowMe/FollowMe";
-import {
-  AVATAR,
-  CV_LINK,
-  PAGE_PROJECT,
-  PAGE_RESUME,
-} from "../constants/Config";
+import { CV_LINK, PAGE_PROJECT, PAGE_RESUME } from "../constants/Config";
+import avatar from "../assets/images/avatar.jpg";
 
 function AboutMe(props) {
   //
@@ -21,7 +17,7 @@ function AboutMe(props) {
       >
         <div className="w-5/12 bg-gray-100 h-full">
           <img
-            src={AVATAR}
+            src={avatar}
             alt=""
             className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full object-cover mx-auto"
           />
@@ -59,8 +55,11 @@ function AboutMe(props) {
           </div>
           <hr />
           <p className="my-3 text-gray-600 text-justify">
-            As a student about to graduate with my own knowledge and experience,
-            I hope to contribute a small part to the development of the company.
+            With nearly 2 years of experience working in a corporate environment
+            as well as accumulated personal experience. In the next 2 years, I
+            want to accumulate more experience, develop working skills as well
+            as soft skills to become a professional programmer. I hope to be
+            able to contribute a small part to the development of the company.
             <br />
             <br />
             <span

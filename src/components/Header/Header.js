@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
-import { AVATAR, PAGE_ABOUT_ME } from "../../constants/Config";
+import { PAGE_ABOUT_ME } from "../../constants/Config";
 import routes from "../../routes/routes";
+import avatar from "../../assets/images/avatar.jpg";
 
 function Header(props) {
   //
@@ -16,7 +17,7 @@ function Header(props) {
           className="flex cursor-pointer"
         >
           <img
-            src={AVATAR}
+            src={avatar}
             alt=""
             className="w-14 h-14 rounded-full mr-4 object-cover"
           />
